@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bli Medlem</title>
+  </head>
+  <body>
+    <form action="https://httpbin.org/anything">
+      <div class="member-container">
+        <div class="member-header">
+          <h1>Bli Medlem</h1>
+          <p>Vänligen fyll i denna formulär för att bli medlem.</p>
+        </div>
+        <div class="member-form">
+          <label for="firstname"><b>Förnamn</b></label>
+          <input
+            type="text"
+            placeholder="Ange förnamn"
+            name="firstname"
+            id="firstname"
+            required
+          />
+          <br />
+
+          <label for="lastname"><b>Efternamn</b></label>
+          <input
+            type="text"
+            placeholder="Ange efternamn"
+            name="lastname"
+            id="lastname"
+            required
+          />
+          <br />
+
+          <label for="username"><b>Användarnamn</b></label>
+          <input
+            type="text"
+            placeholder="Ange användarnamn"
+            name="username"
+            id="username"
+            required
+          />
+          <br />
+
+          <label for="psw"><b>Lösenord</b></label>
+          <input
+            type="password"
+            placeholder="Ange lösenord"
+            name="psw"
+            id="psw"
+            required
+          />
+          <br />
+
+          <label for="psw-repeat"><b>Repetera lösenord</b></label>
+          <input
+            type="password"
+            placeholder="Repeat Password"
+            name="psw-repeat"
+            id="psw-repeat"
+            required
+          />
+          <br />
+
+          <label for="email"><b>E-post</b></label>
+          <input
+            type="text"
+            placeholder="Ange e-postadress"
+            name="email"
+            id="email"
+            required
+          />
+          <br />
+
+          <label for="cats">Favorit katt från dropdown:</label>
+          <select id="cats" name="cats">
+            <option value="cat1">Katt 1</option>
+            <option value="cat2">Katt 2</option>
+            <option value="cat3">Katt 3</option>
+            <option value="cat4">Katt 4</option>
+          </select>
+          <br />
+
+          <input type="checkbox" id="terms" name="terms" value="AcceptTerms" />
+          <label for="terms">Jag godkänner villkoren.</label> <br />
+
+          <hr />
+        </div>
+        <button type="submit" class="registerbtn">Bli medlem</button>
+      </div>
+    </form>
+  </body>
+</html>
